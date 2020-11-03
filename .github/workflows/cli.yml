@@ -1,0 +1,17 @@
+name: publish to nuget
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Mir.Ethernity.Dat/**/*"
+jobs:
+  publish:
+    name: build, pack & publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    - run: dotnet build Mir.Ethernity.Dat.Cli

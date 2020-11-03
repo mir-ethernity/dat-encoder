@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mir.Ethernity.Dat.Tester", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat", "Mir.Ethernity.Dat\Mir.Ethernity.Dat.csproj", "{7B7372BB-71E4-4F5A-B42F-BC292EA42967}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat.Cli", "Mir.Ethernity.Dat.Cli\Mir.Ethernity.Dat.Cli.csproj", "{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7B7372BB-71E4-4F5A-B42F-BC292EA42967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B7372BB-71E4-4F5A-B42F-BC292EA42967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B7372BB-71E4-4F5A-B42F-BC292EA42967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
