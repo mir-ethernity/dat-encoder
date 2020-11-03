@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>bvadell</Authors>
+    <Company>mir-ethernity</Company>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/mir-ethernity/dat-encoder</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
