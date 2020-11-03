@@ -5,9 +5,10 @@ on:
       - main
     paths:
       - "Mir.Ethernity.Dat/**/*"
+      - ".github/workflows/publish.yml"
 jobs:
   publish:
-    name: build, pack & publish
+    name: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

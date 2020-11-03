@@ -16,10 +16,8 @@ jobs:
       with:
         dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     - run: dotnet publish Mir.Ethernity.Dat.Cli -c release -r win-x64
-    - name: Make Release
-      uses: softprops/action-gh-release@v1
+    - name: Upload artifact - Windows
+      uses: actions/upload-artifact@v1.0.0
       with:
-        files: |
-          Mir.Ethernity.Dat.Cli/bin/release/netcoreapp3.1/win-x64/publish/dat-encoder.exe
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: dat-encoder.exe
+        path: Mir.Ethernity.Dat.Cli/bin/release/netcoreapp3.1/win-x64/publish/dat-encoder.exe
