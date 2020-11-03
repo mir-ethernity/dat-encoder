@@ -35,7 +35,7 @@ namespace Mir.Ethernity.Dat.Cli
             try
             {
                 File.WriteAllBytes(destFile, outputBuffer);
-                Console.WriteLine($"File {(args[0] == "-d" ? "decoded" : "encoded")} successfully");
+                Console.WriteLine($"File {(args[0] == "-d" ? "decoded" : "encoded")} successfully!!");
             }
             catch (Exception ex)
             {
