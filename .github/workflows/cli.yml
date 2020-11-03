@@ -19,5 +19,5 @@ jobs:
     - name: Upload artifact - Windows
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: dat-encoder.exe
-        path: Mir.Ethernity.Dat.Cli/bin/release/netcoreapp3.1/win-x64/publish/dat-encoder.exe
+        name: dat-encoder
+        path: Mir.Ethernity.Dat.Cli/bin/release/netcoreapp3.1/win-x64/publish/**/*
