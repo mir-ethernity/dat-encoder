@@ -57,7 +57,7 @@ namespace Mir.Ethernity.Dat.Editor
 
                 FileContext = new FileEditorContext();
                 FileContext.FilePath = openFileDialog.FileName;
-                FileContext.OriginalContent = System.Text.Encoding.UTF8.GetString(output);
+                FileContext.OriginalContent = System.Text.Encoding.ASCII.GetString(output);
                 FileContext.Content = FileContext.OriginalContent;
 
                 UpdateViewState();
@@ -76,7 +76,7 @@ namespace Mir.Ethernity.Dat.Editor
                 FileContext.FilePath = saveFileDialog.FileName;
             }
 
-            var buffer = System.Text.Encoding.UTF8.GetBytes(FileContext.Content);
+            var buffer = System.Text.Encoding.ASCII.GetBytes(FileContext.Content);
             var output = DatEncoder.Encode(buffer);
 
             File.WriteAllBytes(FileContext.FilePath, output);
@@ -94,7 +94,7 @@ namespace Mir.Ethernity.Dat.Editor
             if (saveFileDialog.ShowDialog() == false) return;
             FileContext.FilePath = saveFileDialog.FileName;
 
-            var buffer = System.Text.Encoding.UTF8.GetBytes(FileContext.Content);
+            var buffer = System.Text.Encoding.ASCII.GetBytes(FileContext.Content);
             var output = DatEncoder.Encode(buffer);
 
             File.WriteAllBytes(FileContext.FilePath, output);
