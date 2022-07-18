@@ -7,17 +7,31 @@ on:
       - "Mir.Ethernity.Dat.Cli/**/*"
       - .github/workflows/cli.yml
 jobs:
-  publish:
-    name: publish
+  publish-cli:
+    name: publish-cli
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+        dotnet-version: '6.0.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     - run: dotnet publish Mir.Ethernity.Dat.Cli -c release -r win-x64
-    - name: Upload artifact - Windows
+    - name: Upload artifact CLI - Windows
       uses: actions/upload-artifact@v1.0.0
       with:
         name: dat-encoder
-        path: Mir.Ethernity.Dat.Cli/bin/release/netcoreapp3.1/win-x64/publish/
+        path: Mir.Ethernity.Dat.Cli/bin/release/net6.0-windows/win-x64/publish
+  publish-ui:
+    name: publish-ui
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    - run: dotnet publish Mir.Ethernity.Dat.Editor -c release -r win-x64
+    - name: Upload artifact Editor - Windows
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: dat-encoder
+        path: Mir.Ethernity.Dat.Editor/bin/release/net6.0-windows/win-x64/publish
