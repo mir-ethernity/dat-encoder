@@ -9,7 +9,7 @@ on:
 jobs:
   publish-cli:
     name: publish-cli
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
     - uses: actions/setup-dotnet@v1
@@ -23,7 +23,7 @@ jobs:
         path: Mir.Ethernity.Dat.Cli/bin/release/net6.0-windows/win-x64/publish
   publish-ui:
     name: publish-ui
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
     - uses: actions/setup-dotnet@v1
