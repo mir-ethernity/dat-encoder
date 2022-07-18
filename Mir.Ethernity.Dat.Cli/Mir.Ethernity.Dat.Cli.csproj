@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <AssemblyName>dat-encoder</AssemblyName>
+    <StartupObject>Mir.Ethernity.Dat.Cli.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

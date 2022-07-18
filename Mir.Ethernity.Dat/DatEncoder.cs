@@ -17,7 +17,7 @@ namespace Mir.Ethernity.Dat
 
             var output = new byte[input.Length - 8];
             Array.Copy(input, 8, output, 0, output.Length);
-            output = MaskData(sourceMask, output);
+            MaskData(sourceMask, output);
 
             var sourceChecksum = BitConverter.ToInt32(input, 4);
 
@@ -31,7 +31,7 @@ namespace Mir.Ethernity.Dat
 
             var output = new byte[input.Length + 8];
             var mask = GenerateMask((ushort)input.Length);
-            data = MaskData(mask, input);
+            MaskData(mask, data);
             uint checksum = 0;
 
             for (uint i = 0; i < data.Length; i++)
@@ -57,10 +57,9 @@ namespace Mir.Ethernity.Dat
             }, 0);
         }
 
-        private static byte[] MaskData(uint mask, byte[] data)
+        private static void MaskData(uint mask, byte[] data)
         {
             var maskBuffer = BitConverter.GetBytes(mask);
-
             for (var m = 0; m < 4; m++)
             {
                 var flag = maskBuffer[m];
@@ -71,8 +70,6 @@ namespace Mir.Ethernity.Dat
                     flag += 0x1;
                 }
             }
-
-            return data;
         }
     }
 }

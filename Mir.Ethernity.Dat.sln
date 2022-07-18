@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mir.Ethernity.Dat.Tester", "Mir.Ethernity.Dat.Tester\Mir.Ethernity.Dat.Tester.csproj", "{A25F0C1C-560B-421C-81FC-0A43688E51C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat", "Mir.Ethernity.Dat\Mir.Ethernity.Dat.csproj", "{7B7372BB-71E4-4F5A-B42F-BC292EA42967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mir.Ethernity.Dat", "Mir.Ethernity.Dat\Mir.Ethernity.Dat.csproj", "{7B7372BB-71E4-4F5A-B42F-BC292EA42967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat.Cli", "Mir.Ethernity.Dat.Cli\Mir.Ethernity.Dat.Cli.csproj", "{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mir.Ethernity.Dat.Cli", "Mir.Ethernity.Dat.Cli\Mir.Ethernity.Dat.Cli.csproj", "{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat.Cli.FrameworkTarget", "Mir.Ethernity.Dat.Cli.FrameworkTarget\Mir.Ethernity.Dat.Cli.FrameworkTarget.csproj", "{7BBD5BC7-F6EB-49CC-9309-2A1E06FF7E49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mir.Ethernity.Dat.Editor", "Mir.Ethernity.Dat.Editor\Mir.Ethernity.Dat.Editor.csproj", "{C07DD175-4E3D-4C17-A999-7605B0362A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBD7F937-1B64-4C8D-B2C9-AD47802865A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BBD5BC7-F6EB-49CC-9309-2A1E06FF7E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BBD5BC7-F6EB-49CC-9309-2A1E06FF7E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BBD5BC7-F6EB-49CC-9309-2A1E06FF7E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BBD5BC7-F6EB-49CC-9309-2A1E06FF7E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07DD175-4E3D-4C17-A999-7605B0362A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07DD175-4E3D-4C17-A999-7605B0362A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07DD175-4E3D-4C17-A999-7605B0362A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07DD175-4E3D-4C17-A999-7605B0362A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
