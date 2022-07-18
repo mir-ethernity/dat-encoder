@@ -13,6 +13,7 @@ namespace Mir.Ethernity.Dat.Editor
     /// </summary>
     public partial class MainWindow : Window
     {
+        public const string FILTER_DIALOG = "Mir Files|*.dat;*.edt;*.exp;*.mif";
         public FileEditorContext? FileContext { get; set; } = null;
 
         public MainWindow()
@@ -42,7 +43,7 @@ namespace Mir.Ethernity.Dat.Editor
                 if (boxResult != MessageBoxResult.OK) return;
             }
 
-            var openFileDialog = new OpenFileDialog() { Filter = "Mir DAT File|*.dat" };
+            var openFileDialog = new OpenFileDialog() { Filter = FILTER_DIALOG };
             if (openFileDialog.ShowDialog() == true)
             {
                 if (!File.Exists(openFileDialog.FileName))
@@ -70,7 +71,7 @@ namespace Mir.Ethernity.Dat.Editor
 
             if (FileContext.IsNew || string.IsNullOrEmpty(FileContext.FilePath))
             {
-                var saveFileDialog = new SaveFileDialog() { Filter = "Mir DAT File|*.dat" };
+                var saveFileDialog = new SaveFileDialog() { Filter = FILTER_DIALOG };
                 if (saveFileDialog.ShowDialog() == false) return;
                 FileContext.FilePath = saveFileDialog.FileName;
             }
@@ -89,7 +90,7 @@ namespace Mir.Ethernity.Dat.Editor
         {
             if (FileContext == null) return;
 
-            var saveFileDialog = new SaveFileDialog() { Filter = "Mir DAT File|*.dat" };
+            var saveFileDialog = new SaveFileDialog() { Filter = FILTER_DIALOG };
             if (saveFileDialog.ShowDialog() == false) return;
             FileContext.FilePath = saveFileDialog.FileName;
 
